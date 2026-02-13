@@ -1,0 +1,57 @@
+[
+  {
+    "id": "interstellar",
+    "titleImg": "./assets/interstellar title.png",
+    "bg": "interstellar h.jpg",
+    "poster": "./assets/interstellar v.jpg",
+    "year": "2014",
+    "age": "12+",
+    "duration": "2h 49min",
+    "genre": "sci-fi",
+    "description": "In a dystopian future, astronauts travel through a wormhole in search of a new home for humanity."
+  },
+  {
+    "id": "insidious",
+    "titleImg": "./assets/Insidious Logo.png",
+    "bg": "insidious v.jpg",
+    "poster": "./assets/insidious v.jpg",
+    "year": "2023",
+    "age": "16+",
+    "duration": "1h 47min",
+    "genre": "horror",
+    "description": "A terrifying supernatural journey as a family uncovers dark secrets from the past."
+  },
+  {
+    "id": "cars",
+    "titleImg": "./assets/cars logo.png",
+    "bg": "Cars h.jpeg",
+    "poster": "./assets/Cars v.jpeg",
+    "year": "2006",
+    "age": "6+",
+    "duration": "1h 57min",
+    "genre": "kids",
+    "description": "Lightning McQueen learns about friendship and humility in Radiator Springs."
+  },
+  {
+    "id": "sq",
+    "titleImg": "./assets/sq title.png",
+    "bg": "sq h.jpeg",
+    "poster": "./assets/sq h.jpeg",
+    "year": "2021",
+    "age": "16+",
+    "duration": "9 Episodes",
+    "genre": "drama",
+    "description": "Hundreds of financially struggling players compete in deadly children's games for a massive cash prize."
+  },
+  {
+    "id": "titanic",
+    "titleImg": "./assets/Titanic title.png",
+    "bg": "titanic h.jpeg",
+    "poster": "./assets/titanic v.jpeg",
+    "year": "1997",
+    "age": "18+",
+    "duration": "3h 15min",
+    "genre": "romance",
+    "description": "A timeless love story unfolds aboard the ill-fated RMS Titanic."
+  }
+]

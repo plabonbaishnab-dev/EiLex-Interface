@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    cursor:default;
+}
+#top{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+}
+#top{
+    width: 100%;
+    background-color: none;
+}
+#top h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+}
+#nav{
+    padding-left: 60px;
+}
+
+#nav a{
+    padding: 6px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+#nav a:hover{
+    color: black;
+    transition: linear;
+    transition-duration: 350ms;
+}
+#search input{
+    position: relative;
+    width: 200px;
+    background:transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 3px 0px;
+}
+#search input::placeholder{
+    padding:5px 20px;
+    color: white;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0 60px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background:url('../assets/interstellar\ h.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5s;
+} 
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content{
+    position: relative;
+    max-width: 650px;
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.content.active{
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.banner .carousel-box{
+    z-index: 9;
+    position: relative;
+    display: flex;
+    min-width: 850px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.15);   /* lighter background */
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);  /* softer shadow */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);       /* softer blur */
+    border-radius: 10px;
+    transition: 0.3s;                  /* smooth hover/resize */
+}
+
+.carousel{
+    position: relative;
+    height: 450px;
+    perspective: 1500;
+}
+.carousel .carousel-item{
+    width: 200px;
+    cursor: pointer;
+}
+.carousel .carousel-item img{
+    max-width: 190px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-10px);
+    object-fit: cover;
+    object-position: center;
+}
+.content img{
+    position: relative;
+}
+.movie-title{
+    max-width: 420px;
+    padding-top: 80px;
+    -webkit-text-stroke: 2px black;
+
+}
+.banner .content h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight:400px ;
+    font-size: 25px;
+}
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+.banner .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+.banner .content button{
+    position: relative;
+}
+
+.buttons a{
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 6px 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border:1px solid #ffffff;
+    transition:0.3s ease;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+.buttons a:first-child{
+    background-color: transparent;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.3s;
+    font-weight: 900;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6);
+}
+.buttons a:last-child:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color:black;
+}
+
+.buttons a:first-child:hover {
+    color: #fff;
+    box-shadow: 0 0 12px #fff;
+    transform: scale(1.05);
+    -webkit-text-stroke: none;
+    
+}
+
+.buttons a:hover {
+    animation: pulse 0.5s ease forwards;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1.05); }
+}
+
+
+.buttons a{
+    font-weight:600;
+    display:inline-block;
+    margin-right:10px;
+    padding:8px 22px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    cursor:pointer;
+    border-radius:25px;
+    background:transparent;
+    color:#ffffff;
+}
+
+.banner .content h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding: 10px 20px;
+    -webkit-text-stroke: 1px black;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+#search {
+    position: relative;
+}
+
+#search input {
+    width: 180px;
+    padding: 5px 15px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 25px;
+    outline: none;
+    transition: 0.4s ease;
+}
+
+#search input:focus {
+    width: 300px;
+    background: rgba(255,255,255,0.2);
+    border-color: white;
+}
+
+
+#search input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
