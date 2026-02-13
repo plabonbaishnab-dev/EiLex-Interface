@@ -59,7 +59,7 @@ body{
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    background:url('../assets/interstellar\ h.jpg');
+    
     background-size: cover;
     background-position: center;
     overflow: hidden;
