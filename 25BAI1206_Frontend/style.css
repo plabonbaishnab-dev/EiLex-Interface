@@ -95,12 +95,12 @@ body{
     min-width: 850px;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.15);   /* lighter background */
-    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);  /* softer shadow */
+    background: rgba(0, 0, 0, 0.15);  
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3); 
     border: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);       /* softer blur */
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    transition: 0.3s;                  /* smooth hover/resize */
+    transition: 0.3s;
 }
 
 .carousel{
